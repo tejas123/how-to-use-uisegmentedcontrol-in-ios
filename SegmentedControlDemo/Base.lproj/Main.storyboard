@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="O3Z-57-mDm">
+                                <rect key="frame" x="43" y="172" width="235" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="PSP-aV-EvJ"/>
+                                    <constraint firstAttribute="width" constant="235" id="XBh-pR-cB2"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Green"/>
+                                    <segment title="Orange"/>
+                                    <segment title="Cyan"/>
+                                </segments>
+                                <color key="tintColor" red="0.1764705882" green="0.58823529409999997" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segColorBtnTapped:" destination="vXZ-lx-hvc" eventType="valueChanged" id="fq1-lZ-6f6"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segmented Control " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmj-l5-zUT">
+                                <rect key="frame" x="64" y="57" width="194" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="194" id="7ZN-7U-gRw"/>
+                                    <constraint firstAttribute="height" constant="17" id="zhU-GG-Tuv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
+                                <color key="textColor" red="0.1764705882" green="0.58823529409999997" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tR8-fq-58R">
+                                <rect key="frame" x="43" y="223" width="235" height="29"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="9Xk-Tm-0dF"/>
+                                    <constraint firstAttribute="width" constant="235" id="heZ-BB-Oor"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="O3Z-57-mDm" secondAttribute="trailing" constant="26" id="EEh-J2-RpA"/>
+                            <constraint firstItem="O3Z-57-mDm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="27" id="HR7-zP-ld4"/>
+                            <constraint firstAttribute="centerX" secondItem="tR8-fq-58R" secondAttribute="centerX" id="L4B-1S-4iT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tR8-fq-58R" secondAttribute="trailing" constant="26" id="N0d-Re-6pr"/>
+                            <constraint firstItem="Pmj-l5-zUT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="48" id="ZRU-wY-AYK"/>
+                            <constraint firstAttribute="centerX" secondItem="O3Z-57-mDm" secondAttribute="centerX" id="c4b-bP-X01"/>
+                            <constraint firstAttribute="centerX" secondItem="Pmj-l5-zUT" secondAttribute="centerX" constant="-1" id="cKx-Rw-hMa"/>
+                            <constraint firstItem="Pmj-l5-zUT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="37" id="eqS-Ny-5S8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pmj-l5-zUT" secondAttribute="trailing" constant="46" id="obW-Hw-kCA"/>
+                            <constraint firstItem="O3Z-57-mDm" firstAttribute="top" secondItem="Pmj-l5-zUT" secondAttribute="bottom" constant="98" id="rSM-zX-q6b"/>
+                            <constraint firstItem="tR8-fq-58R" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="27" id="s9a-A0-AU0"/>
+                            <constraint firstItem="tR8-fq-58R" firstAttribute="top" secondItem="O3Z-57-mDm" secondAttribute="bottom" constant="23" id="tDQ-i8-kwn"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="segControlForColor" destination="O3Z-57-mDm" id="dJJ-0V-jO0"/>
+                        <outlet property="vwToDisplayColor" destination="tR8-fq-58R" id="m7V-zP-vhz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="437"/>
+        </scene>
+    </scenes>
+</document>
